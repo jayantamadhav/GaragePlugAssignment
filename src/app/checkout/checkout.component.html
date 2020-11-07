@@ -1,0 +1,55 @@
+<script src="../../assets/bulma-calendar.min.js"></script>
+<!-- NAVBAR -->
+<div class='nav-bar'>
+	<div class='container is-hidden-touch' style='font-size:2rem'><!-- 
+		<div routerLink='/home' class='nav-bar-brand'> GaragePlug </div> -->
+		<img routerLink='/home' src='../../assets/images/logo.png'>
+	</div>
+	<div class='is-hidden-desktop has-text-centered' >
+		<img routerLink='/home' src='../../assets/images/logo.png'>
+	</div>
+</div>
+
+<div class='box-container container has-padding-bottom-50' >
+	<span style='font-weight: 600; letter-spacing: 2px'>CHECKOUT</span>
+	<br><br><br>
+	<div class='container'>
+		<!-- SERVICE DETAILS -->
+		Service Detail
+		<br><br>
+		<div class='columns is-mobile is-gapless is-multiline'>
+			<div class='column is-4 has-text-centered '  *ngFor='let serv of selectedServices'>
+				<img src={{serv.imgURL}} style='max-width: 100px'><br>
+				{{serv.ServiceID}}
+			</div>
+			<div class='column is-4 has-text-centered'>
+				<img src={{carImageURL}} style='max-width:200px'>
+				<br>
+				{{ carType }}
+			</div>
+		</div>
+		<div class='divider'></div>
+		<span>Contact Details</span>
+		<br><br><br>
+		Name : {{ firstname }} {{ lastname}}
+		<br>
+		Email : {{ email }}
+		<br>
+		Mobile : {{ mobile }}
+		<br>
+		Service date: {{ date }}  |  Service time : {{ time}}
+		<br>
+		Payment Method : <span *ngIf='isCash'>Cash</span><span *ngIf='isCard'>Credit / Debit Card</span>
+
+		<div class='divider'></div>
+		<div class='columns is-mobile'>
+			<div class='column'>Total</div>
+			<div class='column'>{{totalPrice}} AED</div>
+		</div>
+		<br><br><br><Br><br>
+		<div class='has-text-centered'>
+			<div class='submit-serv-select' routerLink='/serviceno'>Make Payment <i class='fa fa-arrow-circle-right'></i></div>
+		</div>
+	</div>
+</div>
+<br><br><br>

@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+	font-family: 'Arial';
+}
+*{
+	margin: 0px;
+}
+a{
+	color: #000;
+}
+.home-container{
+	padding-top:20em;
+	padding-bottom:5em;
+	background: #8360c3; 
+	background: -webkit-linear-gradient(to right, #2ebf91, #8360c3); 
+	background: linear-gradient(to right, #2ebf91, #8360c3); 
+	color: white;
+	box-shadow: 0px 0px 10px #585858; 
+}
+.home-hero{
+	font-weight: 600;
+	color: white;
+	font-size: 3rem;
+}
+.home-sub-hero{
+	color: white;
+}
+
+.home-container-2{
+	padding-top:5em;
+}
+.home-service-btn{
+	margin: 0px auto;
+	display: inline;
+	border: 1px solid #2f2f2f;
+	padding: 7px 15px;
+	letter-spacing: 2px;
+	font-size: 1rem;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.home-service-btn:hover{ 
+	background-color: #8360c3; 
+	color: #fff;
+	border:none;
+	box-shadow: 0px 0px 10px #c4c4c4;
+}

@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~font-awesome/css/font-awesome.css';
+
+*{
+	margin:0px;
+}
+html{
+	background-color: #eaeaea;
+}
+body{
+	font-family: 'Arial';
+}
+a{
+	color: fff;
+}
+.nav-bar{
+	padding-top: 0.5em;
+	font-weight:600;
+	font-size:1.5rem; 
+}
+.nav-bar-brand{
+	cursor:pointer;
+}

@@ -1,0 +1,87 @@
+<!-- NAVBAR -->
+<div class='nav-bar'>
+	<div class='container is-hidden-touch' style='font-size:2rem'><!-- 
+		<div routerLink='/home' class='nav-bar-brand'> GaragePlug </div> -->
+		<img routerLink='/home' src='../../assets/images/logo.png'>
+	</div>
+	<div class='is-hidden-desktop has-text-centered' >
+		<img routerLink='/home' src='../../assets/images/logo.png'>
+	</div>
+</div>
+
+<div class='box-container container has-padding-bottom-50' >
+	<div class='box-header has-text-centered'>Services</div>
+	<br>
+	<div class='services-container columns is-mobile is-multiline is-gapless'>
+		<div class='column is-4 has-text-centered has-padding-10'>
+			<div class='service-btn' [class.isSelected1]='isSelected1' (click)="toggleServ1('1')">
+				<img src='service-icon' src='../../assets/images/img1.png'>
+				<br><br>
+				Service 1
+			</div>
+		</div>
+		<div class='column is-4 has-text-centered has-padding-10'>
+			<div class="service-btn" [class.isSelected2]='isSelected2' (click)="toggleServ2('2')">
+				<img src='service-icon' src='../../assets/images/img2.png'>
+				<br><br>
+				Service 2
+			</div>
+		</div>
+		<div class='column is-4 has-text-centered has-padding-10'>
+			<div class='service-btn' [class.isSelected3]='isSelected3' (click)="toggleServ3('3')">
+				<img src='service-icon' src='../../assets/images/img3.png'>
+				<br><br>
+				Service 3
+			</div>
+		</div>
+		<div class='column is-4 has-text-centered has-padding-10'>
+			<div class='service-btn'  [class.isSelected4]='isSelected4' (click)="toggleServ4('4')">
+				<img src='service-icon' src='../../assets/images/img4.png'>
+				<br><br>
+				Service 4
+			</div>
+		</div>
+		<div class='column is-4 has-text-centered has-padding-10'>
+			<div class='service-btn'  [class.isSelected5]='isSelected5' (click)="toggleServ5('5')">
+				<img src='service-icon' src='../../assets/images/img5.png'>
+				<br><br>
+				Service 5
+			</div>
+		</div>
+		<div class='column is-4 has-text-centered has-padding-10'>
+			<div class='service-btn'  [class.isSelected6]='isSelected6' (click)="toggleServ6('6')">
+				<img src='service-icon' src='../../assets/images/img6.png'>
+				<br><br>
+				Service 6
+			</div>
+		</div>
+		<div class='column is-4 has-text-centered has-padding-10'>
+			<div class='service-btn' [class.isSelected7]='isSelected7' (click)="toggleServ7('7')">
+				<img src='service-icon' src='../../assets/images/img7.png'>
+				<br><br>
+				Service 7
+			</div>
+		</div>
+		<div class='column is-4 has-text-centered has-padding-10'>
+			<div class='service-btn' [class.isSelected8]='isSelected8' (click)="toggleServ8('8')">
+				<img src='service-icon' src='../../assets/images/img8.png'>
+				<br><br>
+				Service 8
+			</div>
+		</div>
+		<div class='column is-4 has-text-centered has-padding-10'>
+			<div class='service-btn' [class.isSelected9]='isSelected9' (click)="toggleServ9('9')">
+				<img src='service-icon' src='../../assets/images/img9.png'>
+				<br><br>
+				Service 9
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+	<div class='has-text-centered'>
+		<div class='submit-serv-select' (click)="saveSelectedServices()">Continue <i class='fa fa-arrow-circle-right'></i></div>
+	</div>
+	<br>
+</div>
+<br><br><br>

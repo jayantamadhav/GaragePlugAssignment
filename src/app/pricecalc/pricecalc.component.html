@@ -1,0 +1,39 @@
+<!-- NAVBAR -->
+<div class='nav-bar'>
+	<div class='container is-hidden-touch' style='font-size:2rem'><!-- 
+		<div routerLink='/home' class='nav-bar-brand'> GaragePlug </div> -->
+		<img routerLink='/home' src='../../assets/images/logo.png'>
+	</div>
+	<div class='is-hidden-desktop has-text-centered' >
+		<img routerLink='/home' src='../../assets/images/logo.png'>
+	</div>
+</div>
+
+<div class='box-container container has-padding-bottom-50' >
+	<span style='font-weight: 600; letter-spacing: 2px'>ORDER TOTAL</span>
+	<br><br><br>
+	<span>Selected Services</span>
+	<br>
+	<div class='columns is-mobile is-gapless is-multiline'>
+		<div class='column is-4 has-text-centered '  *ngFor='let serv of selectedServices'>
+			<img src={{serv.imgURL}} style='max-width: 100px'><br>
+			Service : {{serv.serviceID}}
+			Price : {{ serv.price }} AED
+		</div>
+	</div>
+	<span>Selected Car Type</span>
+	<br>
+	<img src={{carImageURL}} style='max-width:100px'>
+	<br>
+	Surplus Charge of {{ surpPrice }} AED for the car type
+	<div class='divider'></div>
+	<div class='columns is-mobile'>
+		<div class='column'>Total</div>
+		<div class='column'>{{totalPrice}} AED</div>
+	</div>
+	<br><br><br>
+	<div class='has-text-centered'>
+		<div class='submit-serv-select' routerLink='/contact-details'>Proceed <i class='fa fa-arrow-circle-right'></i></div>
+	</div>
+</div>
+<br><br><br>

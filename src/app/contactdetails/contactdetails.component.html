@@ -1,0 +1,101 @@
+<script src="../../assets/bulma-calendar.min.js"></script>
+<!-- NAVBAR -->
+<div class='nav-bar'>
+	<div class='container is-hidden-touch' style='font-size:2rem'><!-- 
+		<div routerLink='/home' class='nav-bar-brand'> GaragePlug </div> -->
+		<img routerLink='/home' src='../../assets/images/logo.png'>
+	</div>
+	<div class='is-hidden-desktop has-text-centered' >
+		<img routerLink='/home' src='../../assets/images/logo.png'>
+	</div>
+</div>
+
+<div class='box-container container has-padding-bottom-50' >
+	<span style='font-weight: 600; letter-spacing: 2px'>CONTACT DETAILS</span>
+	<br><br><br>
+	<div class='container'>
+		<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" novalidate>
+			<div class="field is-horizontal">
+				<div class="field-body">
+					<div class="field">
+						<p class="control is-expanded has-icons-left">
+							<input class="input" type="text" placeholder="First Name" name="firstname" [(ngModel)]='dataModel.firstname' required #name="ngModel" >
+							<span class="icon is-small is-left">
+								<i class="fa fa-user"></i>
+							</span>
+						</p>
+					</div>
+					<div class="field">
+						<p class="control is-expanded has-icons-left has-icons-right">
+							<input class="input" type="text" placeholder="Last Name" name="lastname" [(ngModel)]='dataModel.lastname' required #name="ngModel">
+							<span class="icon is-small is-left">
+								<i class="fa fa-user"></i>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="field is-horizontal">
+				<div class="field-body">
+					<div class="field">
+						<p class="control is-expanded has-icons-left">
+							<input class="input" type="email" placeholder="Email" name="email" [(ngModel)]='dataModel.email' required #name="ngModel" >
+							<span class="icon is-small is-left">
+								<i class="fa fa-envelope"></i>
+							</span>
+						</p>
+					</div>
+					<div class="field">
+						<p class="control is-expanded has-icons-left">
+							<input class="input" type="text" placeholder="Mobile" name="mobile" [(ngModel)]='dataModel.mobile' required #name="ngModel">
+							<span class="icon is-small is-left">
+								<i class="fa fa-phone"></i>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class=''>
+				<div class='columns'>
+					<div class='column'>
+						Select a date for servicing : <input type='date' name='date' [(ngModel)]='dataModel.date'>
+					</div>
+					<div class='column'>
+						Select a time for servicing : <input type='time' name='time' [(ngModel)]='dataModel.time'>
+					</div>
+				</div>
+			</div>
+			<div class='divider'></div>
+			<span class=''> Select a Payment Method</span>
+			<br><br>
+			<div class='payment-cash' (click)='isCash()' [class.is-active]='cashRadio'> Cash </div>
+			<div class='payment-card' (click)='isCard()' [class.is-active]='cardRadio'> Credit/Debit Card</div>
+			<br><br>
+			<div *ngIf='displayCardForm'>
+				<div class='columns'>
+					<div class='column'>
+						<div class="field">
+							<p class="control is-expanded">
+								<input class="input" type="text" placeholder="xxxx-xxxx-xxxx-xxxx" name="cardnumber" [(ngModel)]='dataModel.cardnumber' value="isCash" #name="ngModel">
+							</p>
+						</div>
+					</div>
+					<div class='column'>
+						Expiry date <input type='date' name='cardexpiry' [(ngModel)]='dataModel.cardexpiry'>
+					</div>
+				</div>
+				<div class="field">
+					<p class="control is-expanded">
+						<input class="input" type="number" placeholder="CVV" name="cardcvv" [(ngModel)]='dataModel.cardcvv' required style='max-width: 100px'>
+					</p>
+				</div>
+
+			</div>
+			<br/>
+			<div class='has-text-centered'>
+				<button class='submit-serv-select' type='submit'>Submit <i class='fa fa-paper-plane'></i></button>
+			</div>
+		</form>
+	</div>
+</div>
+<br><br><br>

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "GaragePlug"
+    }
+  },
+  "defaultProject": "GaragePlug",
+  "cli": {
+    "analytics": false
+  }
 }

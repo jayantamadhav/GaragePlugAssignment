@@ -1,0 +1,50 @@
+.box-container{
+	margin-top: 2em;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #b9b9b9;
+	padding:10px;
+}
+.services-container{
+	margin-top:1em;
+}
+
+.box-header{
+	padding-top:2em;
+	font-size:1rem;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+.car-icon{
+	min-width: 100px;
+	max-width: 100px;
+	min-height: 100px;
+	max-height: 100px;
+	margin:0px auto;
+}
+.service-btn{
+	padding:10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.box-container {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+}
+.submit-serv-select{
+	display: inline-block;
+	background-color: #1f8465;
+	color: white;
+	padding: 7px 15px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.submit-serv-select:hover{
+	background-color: #179c73;
+	color: white;
+}
+.isSelected{
+	border-radius: 5px;
+	background-color: rgba(20, 177, 53, 0.4);
+}
