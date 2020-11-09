@@ -4,7 +4,7 @@ import { DataService } from '../data.service';
 @Component({
   selector: 'app-pricecalc',
   templateUrl: './pricecalc.component.html',
-  styleUrls: ['../../../node_modules/bulma/css/bulma.css', './pricecalc.component.css']
+  styleUrls: ['../../../node_modules/bulma/css/bulma.min.css', './pricecalc.component.css']
 })
 export class PricecalcComponent implements OnInit {
 	selectedCar = 'None';

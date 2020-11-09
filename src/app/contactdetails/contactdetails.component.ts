@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-contactdetails',
   templateUrl: './contactdetails.component.html',
-  styleUrls: ['../../assets/bulma-calender.css','../../../node_modules/bulma/css/bulma.css', './contactdetails.component.css']
+  styleUrls: ['../../../node_modules/bulma/css/bulma.min.css', './contactdetails.component.css']
 })
 export class ContactdetailsComponent implements OnInit {
 	lname = 'None';

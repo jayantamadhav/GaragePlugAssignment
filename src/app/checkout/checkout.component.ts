@@ -4,7 +4,7 @@ import { DataService } from '../data.service'
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
-  styleUrls: ['../../../node_modules/bulma/css/bulma.css', './checkout.component.css']
+  styleUrls: ['../../../node_modules/bulma/css/bulma.min.css', './checkout.component.css']
 })
 export class CheckoutComponent implements OnInit {
 	selectedServices = [];

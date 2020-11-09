@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
-  styleUrls: ['../../../node_modules/bulma/css/bulma.css', './services.component.css']
+  styleUrls: ['../../../node_modules/bulma/css/bulma.min.css', './services.component.css']
 })
 
 export class ServicesComponent implements OnInit {

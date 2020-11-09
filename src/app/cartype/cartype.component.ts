@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-cartype',
   templateUrl: './cartype.component.html',
-  styleUrls: ['../../../node_modules/bulma/css/bulma.css', './cartype.component.css']
+  styleUrls: ['../../../node_modules/bulma/css/bulma.min.css', './cartype.component.css']
 })
 
 export class CartypeComponent implements OnInit {
